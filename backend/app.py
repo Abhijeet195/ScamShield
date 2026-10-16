@@ -23,16 +23,19 @@ from risk_assessment import evaluate_risk
 app = Flask(__name__)
 
 # Allow requests from React frontend and browser extensions
+allowed_origins = [
+    origin.strip()
+    for origin in os.environ.get(
+        "SCAMSHIELD_CORS_ORIGINS",
+        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:3000,http://127.0.0.1:3000",
+    ).split(",")
+    if origin.strip()
+]
 CORS(
     app,
     resources={
         r"/api/*": {
-            "origins": [
-                "http://localhost:5173",
-                "http://127.0.0.1:5173",
-                "http://localhost:3000",
-                "http://127.0.0.1:3000"
-            ]
+            "origins": allowed_origins
         }
     }
 )

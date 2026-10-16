@@ -364,6 +364,45 @@ TEST RESULTS: 12/12 tests passed (100.0%)
 ========================================================
 ```
 
+## 🚀 Deploying to PythonAnywhere
+
+PythonAnywhere can serve both the Flask API and the built React/Vite frontend from one domain. Build the frontend locally, then map `/` to `frontend/dist/` in the PythonAnywhere Web tab; the frontend uses same-origin `/api/...` requests in production.
+
+1. Clone the repository into your PythonAnywhere home directory and create a Python 3.11 virtual environment.
+2. Install only the API runtime packages in that environment:
+
+  ```bash
+  cd ~/ScamShield
+  python3.11 -m venv ~/.virtualenvs/scamshield
+  source ~/.virtualenvs/scamshield/bin/activate
+  pip install flask flask-cors joblib scikit-learn==1.6.1
+  ```
+
+  The model was serialized with scikit-learn 1.6.1. `pandas` and `matplotlib` are needed for training, not serving, and may exceed the storage quota on a free account.
+3. In the PythonAnywhere WSGI configuration file, import the app from the backend directory (replace `yourusername`):
+
+  ```python
+  import sys
+
+  project_home = "/home/yourusername/ScamShield/backend"
+  if project_home not in sys.path:
+     sys.path.insert(0, project_home)
+
+  from app import app as application
+  ```
+
+  Set the web app's virtualenv path to `/home/yourusername/.virtualenvs/scamshield`.
+4. Build the frontend locally with `npm run build` from `frontend/`, upload the generated `frontend/dist/` files while preserving its `assets/` directory, and add this static mapping in the Web tab:
+
+  ```text
+  URL: /
+  Directory: /home/yourusername/ScamShield/frontend/dist
+  ```
+
+5. Reload the web app. Verify the site at `https://yourusername.pythonanywhere.com/` and the API at `https://yourusername.pythonanywhere.com/api/health`.
+
+The free PythonAnywhere plan requires you to log in and extend the web app monthly. The Chrome extension is not deployed by these steps; update its API URL and host permissions separately if you intend to publish it. Never share account passwords in chat.
+
 ---
 
 ## 🛡️ Target Audience Context: India Cyber Defense
