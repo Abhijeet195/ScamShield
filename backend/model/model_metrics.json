@@ -1,0 +1,24 @@
+{
+    "selected_model": "Balanced Logistic Regression",
+    "accuracy": 0.9845,
+    "spam_precision": 0.9375,
+    "spam_recall": 0.9375,
+    "spam_f1": 0.9375,
+    "test_samples": 1032,
+    "confusion_matrix": {
+        "labels": [
+            "Ham",
+            "Spam"
+        ],
+        "values": [
+            [
+                896,
+                8
+            ],
+            [
+                8,
+                120
+            ]
+        ]
+    }
+}
