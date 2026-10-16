@@ -1,0 +1,21 @@
+label,message,category
+spam,"Dear SBI User, your YONO account will be blocked today due to pending KYC. Please update your PAN card immediately at http://bit.ly/sbi-yono-kyc to avoid deactivation.",sbi_kyc
+spam,"Dear Consumer, your electricity power will be disconnected tonight at 9.30 PM from electricity office because previous month bill was not updated. Immediately contact executive at 9876543210.",electricity_bill
+spam,"Congratulations! You won Rs. 25,00,000 in KBC Lucky Draw 2026. Send your photo, account details, and WhatsApp +91-9988776655 to claim your prize.",kbc_lottery
+spam,"India Post: Your consignment IN849202392IN could not be delivered due to wrong address. Update address within 24 hrs at http://indiapost-update.top/address",india_post
+spam,"Dear Customer, your HDFC NetBanking has been restricted. Download our official safety APK to re-enable your account: http://hdfc-bank-support.live/safety.apk",hdfc_phishing
+spam,"You have received a cashback reward of Rs. 4,999 on PhonePe! Enter your UPI PIN to claim reward directly into your bank account: http://phonepe-reward-claim.xyz",upi_pin_fraud
+spam,"Urgent: Your SIM card will be deactivated in 24 hours as Aadhaar verification failed. Contact TRAI officer at 9811223344 or verify at http://airtel-aadhaar.buzz",sim_deactivation
+spam,"Part time job alert: Earn Rs. 3,000 to Rs. 8,000 daily by simply subscribing to YouTube channels and rating Google maps. Contact HR on Telegram @EarnDailyIndia",telegram_job_scam
+spam,"Your ICICI credit card reward points worth Rs. 7,850 are expiring tonight. Redeem points for cash voucher at http://icici-points-redeem.club",card_rewards
+spam,"Income Tax Dept Notice: A tax refund of Rs. 18,450 has been approved for your PAN. Confirm your bank account details at http://incometax-refund-portal.site",income_tax
+spam,"Amazon Delivery: Your parcel cannot be delivered. A re-delivery charge of Rs. 5 is required. Pay online at http://cutt.ly/amz-deliv-pay",delivery_fraud
+spam,"Dear customer, your Axis Bank account is on hold. Submit your Netbanking password and OTP to unfreeze: http://axis-secure-auth.top",banking_phishing
+ham,"Your OTP for logging into Zomato is 492810. Valid for 10 minutes. Please do not share this OTP with anyone, including Zomato delivery partners.",legit_otp
+ham,"Dear Customer, Rs. 450.00 debited from SBI Account ending 4821 on 15-OCT-26 via UPI Ref 9283749281. Balance: Rs. 14,250.00. SBI.",legit_banking
+ham,"Your Swiggy order from Burger King has been picked up by delivery partner Rahul. Track live in the Swiggy app.",legit_delivery
+ham,"IRCTC PNR 2849281920: Train 12952 NDLS to BCT confirmed. Coach B3 Berth 42 (MB). Charting done. Happy journey!",legit_travel
+ham,"Dear Customer, your electricity bill of Rs. 1,420 for Consumer ID 0293847 is due on 22-OCT-26. Pay securely via electricity board website or official app.",legit_utility
+ham,"Hi Rohit, are you joining the college alumni meetup this Saturday evening?",conversational
+ham,"Mom, I have reached Bangalore safely. Will call you after checking into the hostel.",conversational
+ham,"Your Jio prepaid recharge of Rs. 299 was successful. Validity 28 days with 1.5GB/day data. Thank you for choosing Jio.",legit_telecom

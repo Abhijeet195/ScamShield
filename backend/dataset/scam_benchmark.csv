@@ -1,0 +1,26 @@
+label,message,category
+spam,"Your package could not be delivered due to incomplete address. Please update your details within 24 hours at https://postal-tracking-update.top/address to reschedule.",package_delivery
+spam,"URGENT: Your PayPal account has been temporarily restricted due to unauthorized login attempt. Verify your identity immediately at http://bit.ly/paypal-auth-verify to avoid suspension.",account_phishing
+spam,"Congratulations! Your mobile number was selected for $750 Amazon gift card. Claim here before midnight: http://tinyurl.com/amz-claim-750",lottery_reward
+spam,"Work from home part-time: Earn $300-$800 daily by rating hotels and reviewing products. No experience needed. Contact our recruiter on Telegram @GlobalTasksCorp",job_scam
+spam,"Netflix: Your subscription renewal payment failed. To prevent account deactivation, update your billing details at http://netflix-billing-recovery.xyz",account_phishing
+spam,"Bank Alert: Unrecognized transaction of $1,420.50 initiated on your debit card. If this was not you, call fraud helpline at 1-800-555-0199 or cancel at http://192.168.1.10/cancel",banking_phishing
+spam,"Federal Tax Refund: You are eligible for a tax rebate of $485.20. Submit your direct deposit details securely at http://tax-refund-portal.live/irs",tax_refund
+spam,"Geek Squad: Your annual protection plan auto-renewed for $399.00. If you did not authorize this charge, call +1-888-555-0144 immediately to claim a refund.",tech_support
+spam,"Dear customer, your Chase Online access has been locked due to suspicious activity. Unlock your profile now: http://chase-security-verify.work",banking_phishing
+spam,"Crypto Alert: 2.45 BTC credited to your wallet address. Confirm transaction and pay withdrawal gas fee at http://crypto-release-vault.top",crypto_scam
+spam,"DHL Express: Your shipment #8492048 is awaiting customs clearance fee of $2.50. Pay online to release delivery: http://cutt.ly/dhl-customs-fee",package_delivery
+spam,"Notice: You have 1 unread secure document from Human Resources regarding salary adjustment. Review document: http://hr-portal-review.xyz/doc",corporate_phishing
+spam,"Your Apple ID was used to purchase Final Cut Pro from an unknown device. If unauthorized, revoke access immediately: http://apple-id-verify.site",credential_phishing
+spam,"Congratulations! You won 2nd prize in the National Sweepstakes. Contact claim agent Mr. David at claim@nationallottery.org with your claim code NSW-9941.",lottery_reward
+spam,"Immediate Action Required: Your credit score decreased by 85 points. Check the reported discrepancy and file a dispute: http://credit-dispute-alert.club",credit_scam
+ham,"Can you pick up milk and bread on your way home from work? Thanks!",conversational
+ham,"Hey Sarah, are we still meeting for lunch at 12:30 tomorrow?",conversational
+ham,"Your doctor appointment with Dr. Henderson is confirmed for Thursday at 3:00 PM. Reply 1 to confirm, 2 to reschedule.",transactional
+ham,"Your Uber ride is arriving now. White Toyota Camry (plate #7XYZ89). Driver: Michael.",transactional
+ham,"Flight AA1204 to Chicago is on schedule departing Gate B12 at 4:15 PM.",transactional
+ham,"Hi team, please find attached the agenda for tomorrow's sprint planning meeting.",conversational
+ham,"Mom called to ask if we are coming over for Sunday dinner this week.",conversational
+ham,"Your package was delivered to the front porch at 2:14 PM. Track on Amazon app.",transactional
+ham,"Reminder: The library books you checked out are due back in 3 days.",transactional
+ham,"Thanks for stopping by today! It was really great catching up after so long.",conversational

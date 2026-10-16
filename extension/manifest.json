@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ScamShield — Pre-Click Scam & Link Protection",
+  "version": "2.0.0",
+  "description": "Pre-click protection against smishing, phishing links, and deceptive URLs before navigation.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ScamShield Link Inspector"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "http://localhost:5000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["modal.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

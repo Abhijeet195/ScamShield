@@ -1,9 +1,135 @@
 {
     "selected_model": "Balanced Logistic Regression",
+    "classification_threshold": 0.6,
+    "evaluation_date": "2026-10-16 20:40:40",
+    "dataset_info": {
+        "total_cleaned_samples": 5158,
+        "ham_samples": 4516,
+        "spam_samples": 642,
+        "training_samples": 4126,
+        "test_samples": 1032
+    },
+    "test_split_metrics": {
+        "accuracy": 0.9845,
+        "spam_precision": 0.9667,
+        "spam_recall": 0.9062,
+        "spam_f1": 0.9355,
+        "test_samples": 1032,
+        "confusion_matrix": {
+            "labels": [
+                "Ham",
+                "Spam"
+            ],
+            "values": [
+                [
+                    900,
+                    4
+                ],
+                [
+                    12,
+                    116
+                ]
+            ]
+        }
+    },
+    "threshold_tuning": [
+        {
+            "threshold": 0.2,
+            "precision": 0.3629,
+            "recall": 0.9845,
+            "f1": 0.5303
+        },
+        {
+            "threshold": 0.3,
+            "precision": 0.6684,
+            "recall": 0.969,
+            "f1": 0.7911
+        },
+        {
+            "threshold": 0.4,
+            "precision": 0.8054,
+            "recall": 0.9302,
+            "f1": 0.8633
+        },
+        {
+            "threshold": 0.5,
+            "precision": 0.9084,
+            "recall": 0.9225,
+            "f1": 0.9154
+        },
+        {
+            "threshold": 0.6,
+            "precision": 0.9664,
+            "recall": 0.8915,
+            "f1": 0.9274
+        },
+        {
+            "threshold": 0.7,
+            "precision": 1.0,
+            "recall": 0.7752,
+            "f1": 0.8734
+        },
+        {
+            "threshold": 0.8,
+            "precision": 1.0,
+            "recall": 0.6047,
+            "f1": 0.7536
+        }
+    ],
+    "external_benchmarks": {
+        "smishing_benchmark": {
+            "dataset_name": "Independent Smishing Benchmark",
+            "sample_count": 25,
+            "accuracy": 0.72,
+            "spam_precision": 0.9,
+            "spam_recall": 0.6,
+            "spam_f1": 0.72,
+            "confusion_matrix": {
+                "labels": [
+                    "Ham",
+                    "Spam"
+                ],
+                "values": [
+                    [
+                        9,
+                        1
+                    ],
+                    [
+                        6,
+                        9
+                    ]
+                ]
+            }
+        },
+        "india_social_engineering": {
+            "dataset_name": "India Social Engineering Benchmark",
+            "sample_count": 20,
+            "accuracy": 0.65,
+            "spam_precision": 0.8571,
+            "spam_recall": 0.5,
+            "spam_f1": 0.6316,
+            "confusion_matrix": {
+                "labels": [
+                    "Ham",
+                    "Spam"
+                ],
+                "values": [
+                    [
+                        7,
+                        1
+                    ],
+                    [
+                        6,
+                        6
+                    ]
+                ]
+            }
+        }
+    },
     "accuracy": 0.9845,
-    "spam_precision": 0.9375,
-    "spam_recall": 0.9375,
-    "spam_f1": 0.9375,
+    "spam_precision": 0.9667,
+    "spam_recall": 0.9062,
+    "spam_f1": 0.9355,
     "test_samples": 1032,
     "confusion_matrix": {
         "labels": [
@@ -12,12 +138,12 @@
         ],
         "values": [
             [
-                896,
-                8
+                900,
+                4
             ],
             [
-                8,
-                120
+                12,
+                116
             ]
         ]
     }

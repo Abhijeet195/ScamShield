@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ScamShield Pre-Click Inspector</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --safe: #10b981;
+      --border: #334155;
+    }
+    body {
+      margin: 0;
+      padding: 16px;
+      width: 320px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .shield-badge {
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .status-text {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 6px;
+    }
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    input[type="text"]:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    button {
+      width: 100%;
+      padding: 9px;
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 12px;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .result-box {
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 6px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      font-size: 12px;
+      display: none;
+    }
+    .result-box.danger {
+      border-color: var(--danger);
+      background: rgba(239, 68, 68, 0.1);
+    }
+    .result-box.warning {
+      border-color: var(--warning);
+      background: rgba(245, 158, 11, 0.1);
+    }
+    .result-box.safe {
+      border-color: var(--safe);
+      background: rgba(16, 185, 129, 0.1);
+    }
+    .flags-list {
+      margin: 6px 0 0 0;
+      padding-left: 16px;
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+    .flags-list li {
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="shield-badge">S</div>
+    <div>
+      <div class="title">ScamShield 2.0</div>
+      <div class="status-text">Pre-Click Protection Active</div>
+    </div>
+  </div>
+
+  <label for="urlInput">QUICK LINK INSPECTION</label>
+  <input type="text" id="urlInput" placeholder="Paste link (e.g., bit.ly/sbi-kyc)..." />
+  <button id="scanBtn">Inspect Link Before Clicking</button>
+
+  <div id="resultBox" class="result-box">
+    <strong id="resultVerdict"></strong>
+    <p id="resultGuidance" style="margin: 4px 0 6px 0;"></p>
+    <ul id="flagsList" class="flags-list"></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
